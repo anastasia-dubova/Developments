@@ -1,0 +1,42 @@
+.filter {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	margin: 2rem 0 1rem 0;
+	padding: 0;
+
+	&__title {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.3px;
+
+		color: #363636;
+
+		padding-right: 16px;
+	}
+	&__input {
+		width: 418px;
+		height: 50px;
+		border: 1px solid #D8D8D8;
+		border-radius: 25px;
+
+		padding: 25px;
+
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	.filter {
+		margin: 1rem 0 .5rem 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.filter {
+		margin: 0.5rem 0;
+	}
+}

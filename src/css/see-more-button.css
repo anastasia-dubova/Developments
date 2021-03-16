@@ -1,0 +1,23 @@
+.see-more-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid #D8D8D8;
+	border-radius: 25px;
+	padding: 12px 33px;
+	
+	&__text {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 24px;
+
+		letter-spacing: -0.3px;
+
+		color: #363636
+	}
+	&__img {
+		padding-left: 8px;
+	}
+}
