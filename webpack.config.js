@@ -8,7 +8,7 @@ module.exports = {
 	context: path.resolve(__dirname, 'src'),
 	entry: ['@babel/polyfill', './js/index.js'],
 	output: {
-		filename: '[name].[contenthash].js',
+		filename: '[name].js',
 		path: path.resolve(__dirname, 'dist')
 	},
 	plugins: [
@@ -26,7 +26,7 @@ module.exports = {
 			]
 		}),
 		new MiniCssExtractPlugin({
-			filename: '[name].[contenthash].css'
+			filename: '[name].css'
 		})
 	],
 	module: {
