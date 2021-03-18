@@ -14,10 +14,10 @@ let dataDevelopments = {};
 const filterDevelopments = e =>{
 	const fltr = e.target.value.trim().toUpperCase()
 	if(fltr.length > filterStartSymbolsCount) {
-		getDevelopments(dataDevelopments.filter(value => value.title.toUpperCase().indexOf(fltr) > -1))
+		developmentsList.innerHTML = getDevelopments(dataDevelopments.filter(value => value.title.toUpperCase().indexOf(fltr) > -1))
 	} else {
 		if(fltr.length === filterStartSymbolsCount && e.data === null) {
-			getDevelopments(dataDevelopments)
+			developmentsList.innerHTML = getDevelopments(dataDevelopments)
 		}
 	}
 
