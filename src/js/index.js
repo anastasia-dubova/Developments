@@ -37,6 +37,8 @@ const init = () => {
 		.catch(reject => {
 			console.log('Error!', reject)
 		})
+
+	filterInput.value = ''
 	filterInput.addEventListener('input', filterDevelopments)
 }
 
